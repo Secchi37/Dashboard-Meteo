@@ -3,15 +3,16 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
 import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar />
-      <header className="App-header">
-        <HomePage />
-        <Dashboard />
-      </header>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
