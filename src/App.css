@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+.qMaps {
+  margin: 50px;
+}
+.leaflet-container {  
+  width: 80wh; 
+  height: 80vh;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
