@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import { Popup } from "react-leaflet";
-import { position } from "../DATA/objectData";
-import { markers } from "../DATA/objectData";
 import { iconMarker } from "../DATA/objectData";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "../App.css";
 
-export default function Maps() {
+
+export default function Maps(props) {
+    const position=props.position
+    const markers=props.markers;
     useEffect(() => {
         callData();
         if (info === null) {
@@ -40,7 +41,7 @@ export default function Maps() {
             setIsLoading(true);
         } catch (error) {
             setIsLoading(false);
-            console.log('mamcano dati');
+            //console.log('mamcano dati');
         }
     };
 
@@ -63,11 +64,11 @@ export default function Maps() {
 
     return (
         <div className="leaflet-container">
-            <MapContainer center={position} zoom={12} scrollWheelZoom={true}>
+            <MapContainer center={position} zoom={12} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />                
+                />
                 {isLoading === true ?
                     <div>
                         {info.map((info, index) => (
