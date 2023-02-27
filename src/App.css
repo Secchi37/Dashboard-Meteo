@@ -1,5 +1,34 @@
-.App {
-  text-align: center;
+.App { 
+  background-image:url('../src/img/shape/shape-55b.png'),url('../src/img/shape/shape-56b.png'); 
+  background-position:210% -110%,188% -88%;
+  background-position-y: top,top;
+  background-repeat: no-repeat;
+  background-attachment: 'fixed';  
+  text-align: center;   
+}
+
+/* @media(min-width:650px){
+  .App{
+    background-image:url('../src/img/shape/shape-55b.png'),url('../src/img/shape/shape-56b.png'); 
+    background-position-x:210% -110%,188% -88%;
+    background-repeat: no-repeat;
+    background-attachment: 'fixed'; 
+  }
+} */
+
+
+.contect-box h1{
+  width: 570px;
+  height: 280px;
+  text-align:left;
+  margin-top: 50px;
+  position:relative;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-bottom: 24px;
+
+
 }
 
 .App-logo {
@@ -37,7 +66,7 @@
     height: 80vh;
     position: 'absolute'; 
     top: 0;
-  left: 0 ;  
+    left: 0 ;  
     z-index: 'index' 1;
 }
 .leaflet-container {  
