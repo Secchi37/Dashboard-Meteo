@@ -1,15 +1,12 @@
-/* eslint-disable react/style-prop-object */
-import React,{useState} from "react";
+import React from "react";
 import { Card, Container} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
-//import { CardGroup } from "react-bootstrap";
-import { dataCard } from "../DATA/DataCard";
 import '../components/styles.css'
 
 
 
-export default function CardTecnologie(){
-   
+export default function CardTecnologie(props){
+   const dataCard=props.dataCard
     return(
         <Container fluid style={{marginTop:10,marginLeft:25}}>
         <Row xs={1} md={2} className="g-4"

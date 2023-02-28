@@ -1,9 +1,10 @@
 import React from "react";
 import { Container,Image} from "react-bootstrap";
 import CardTecnologie from "../components/CardTecnologie";
+import { dataCard } from "../DATA/DataCard";
 import "../App.css";
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
       <Container flex>
           <div className="banner">
@@ -21,7 +22,7 @@ export default function HomePage() {
           <p style={{textAlign:'center'}}>TECNOLOGIE</p>
           <h2>La nostra catena tecnologica per le Smart Cities</h2>
           <Image  className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")}/>
-           <CardTecnologie/>
+           <CardTecnologie dataCard={dataCard}/>
           </div>
       </Container>
   );
