@@ -1,2 +1,13 @@
 
+.card{
+    background-color: white;
+    text-align: center;
+}
+.card :hover{
+    background-color: orangered;
+  /*  transform: translateY(-5px); */
+    text-align: center;
+    color:white;      
+}
+
 
