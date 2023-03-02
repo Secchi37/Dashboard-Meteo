@@ -9,6 +9,7 @@ import "../App.css";
 export default function Maps(props) {
     const position=props.position
     const markers=props.markers;
+    
     useEffect(() => {
         callData();
         if (info === null) {
@@ -25,7 +26,7 @@ export default function Maps(props) {
             const dati = await Promise.all(
                 markers.map(async (item) => {
                     const response = await fetch("http://api.weatherapi.com/v1/current.json?key=31a8826667644854b57114207231602&q=" + item.coord + "&aqi=no&lang=it");
-                    const resp = await (await response.json());
+                    const resp = await (await response.json());                    
                     return resp;
                 })
             );

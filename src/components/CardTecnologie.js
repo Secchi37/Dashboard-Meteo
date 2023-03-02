@@ -15,7 +15,7 @@ export default function CardTecnologie(props){
         {dataCard.map((dataCard,index)=>(
             
             <Card
-             border="light" key={index}  className="card" style={{ width: '18rem'}}>
+             border="light" key={index}  className="tec" style={{ width: '18rem'}}>
             {/* <a href={dataCard.link} title={dataCard.title}>{dataCard.copy}</a> */}
             <Card.Body >
             <Card.Title style={{marginTop:50}}>{dataCard.titleCard}</Card.Title>
