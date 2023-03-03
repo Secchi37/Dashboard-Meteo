@@ -4,7 +4,7 @@ import { dataS } from "../DATA/DataSkills";
 import '../components/styles.css'
 
 export  default function BoxSkills(){
-    const[view,setView]=useState(false);
+    
     const[num,setNum]=useState(null); 
     return(
         <Container fluid style={{ 
