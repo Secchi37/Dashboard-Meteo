@@ -18,6 +18,7 @@ export default function BoxProcess(){
                         width: '18rem', top: 0,
                         left: 0, position: 'relative', zIndex: 1, 
                     }}>
+                     {/* <a href={datiP.link} title={datiP.title}>{datiP.copy}</a> */}
                         <Row style={{ justifyContent: 'right',marginTop:10}} >
                         
                         <Badge bg={num===index? view:'ligth'} text="dark" key={index} pill

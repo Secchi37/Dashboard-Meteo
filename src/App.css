@@ -3,7 +3,10 @@
   background-position:210% -110%,188% -88%;
   background-position-y: top,top;
   background-repeat: no-repeat;
-  background-attachment: 'fixed';  
+  background-attachment: 'fixed';
+ 
+ 
+   
   /* text-align: center; */   
 }
 
@@ -54,6 +57,16 @@
     margin: 0px;
     text-align: center;   
 }
+
+.skills{
+background-image:url("../src/img/shape/shape-58.png"),url("../src/img/shape/shape-57.png");
+background-repeat: no-repeat;
+ margin-left: -10%;
+ margin-right: -10%;
+ left: 0;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
