@@ -36,13 +36,29 @@ export default function HomePage(props) {
                 <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
                 <BoxProcess />
             </div>
+            <div>            
+            <div className="zero">
+            <div className="uno" style={{backgroundImage: 'url(' + require('../img/shape/shape-57.png') + ')'}}>
+            <div  className="due" style={{backgroundImage: 'url(' + require('../img/shape/shape-58.png') + ')'}}>   
+            
+            </div>
+            </div>
+           
+            </div>
+
+
             <div className="skills">
-                <p style={{ textAlign: 'left', color: 'white', paddingTop: '5%', marginLeft: '12%' }}>LE COMPETENZE DI DOMINIO ACQUISITE</p>
-                <Image
-                    //className="d-block mx-auto img-fluid" 
-                    alt='alt' src={require("../img/icons/decor-1.png")} style={{ marginLeft: '12%' }} />
+            <div style={{position:'relative'}}>
+            <p style={{ textAlign: 'left', color: 'white', paddingTop: '5%', zIndex:3 }}>LE COMPETENZE DI DOMINIO ACQUISITE</p>
+            <Image
+                //className="d-block mx-auto img-fluid" 
+                alt='alt' src={require("../img/icons/decor-1.png")} style={{zIndex:3 }} />
+                </div>
+                
                 <BoxSkills />
             </div>
+            </div>
+            
 
         </Container>
     )

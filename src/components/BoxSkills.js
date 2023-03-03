@@ -9,7 +9,7 @@ export  default function BoxSkills(){
     return(
         <Container fluid style={{ 
             //background: 'traparent',
-        paddingBottom:'20%',marginTop:'2%',marginLeft:'12%' }}>
+        paddingBottom:'20%',marginTop:'2%' }}>
             <Row xs={1} md={2} className="g-4" style={{ backgroundColor: 'rgba(255,255,255,0.01)' }}>
                 {dataS.map((dataS, index) => (
                     <Card border="" key={index}                   
