@@ -36,29 +36,27 @@ export default function HomePage(props) {
                 <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
                 <BoxProcess />
             </div>
-            <div>            
-            <div className="zero">
-            <div className="uno" style={{backgroundImage: 'url(' + require('../img/shape/shape-57.png') + ')'}}>
-            <div  className="due" style={{backgroundImage: 'url(' + require('../img/shape/shape-58.png') + ')'}}>   
-            
-            </div>
-            </div>
-           
-            </div>
+            <div className="box1-skills">                
+                <div className="box2-skills">
+                    <div 
+                    style={{ position: 'relative',marginLeft:'15%' }}
+                    >
+                        <p style={{ textAlign: 'left', color: 'white', paddingTop: '5%', zIndex: 3 }}>LE COMPETENZE DI DOMINIO ACQUISITE</p>
+                        <Image
+                            //className="d-block mx-auto img-fluid" 
+                            alt='alt' src={require("../img/icons/decor-1.png")} style={{ zIndex: 3 }} />
+                    </div>
 
-
-            <div className="skills">
-            <div style={{position:'relative'}}>
-            <p style={{ textAlign: 'left', color: 'white', paddingTop: '5%', zIndex:3 }}>LE COMPETENZE DI DOMINIO ACQUISITE</p>
-            <Image
-                //className="d-block mx-auto img-fluid" 
-                alt='alt' src={require("../img/icons/decor-1.png")} style={{zIndex:3 }} />
+                    <BoxSkills />
                 </div>
-                
-                <BoxSkills />
             </div>
+            <div className="box-contatti" style={{position:'relative',margintTop:'50%'}}>
+            <p style={{ textAlign: 'center' }}>CONTATTI</p>
+            <h2>Inviaci un Messaggio</h2>
+            <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
             </div>
-            
+
+
 
         </Container>
     )
