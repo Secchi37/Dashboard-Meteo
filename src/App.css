@@ -63,7 +63,7 @@
 background-image:url("../src/img/shape/shape-57.png");
 background-repeat: cover;
 margin-left: -9%;
-margin-right: -9%;
+/* margin-right: -9%; */
 }
 
 .box2-skills{
@@ -71,8 +71,8 @@ background-image:url("../src/img/shape/shape-58.png");
 background-repeat: no-repeat;
 background-position: bottom;
 margin-left: -9%;
-margin-right: -9%;
-transition: 0.2s ease-in;
+/* margin-right: -9%; */
+
 
 }
 

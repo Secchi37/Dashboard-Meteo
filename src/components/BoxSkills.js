@@ -30,7 +30,7 @@ export  default function BoxSkills(){
                         style={num===index? { position: 'relative', zIndex: 1,marginLeft:'-5%'}:{ position: 'relative', zIndex: 1,marginLeft:'-5%',
                        filter:'invert(75%) sepia(43%) saturate(533%) hue-rotate(210deg) brightness(75%) contrast(125%)'}} />
                         <Card.Img src={require('../img/icons/' + `${dataS.img}` + '.png')} key={index} style={num===index? 
-                            {                          
+                            {                 
                                 marginTop: '25%',
                                 width: 63, heigth: 63,
                                 filter: 'invert(64%) sepia(72%) saturate(3753%) hue-rotate(347deg) brightness(100%) contrast(102%)',
