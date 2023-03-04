@@ -9,7 +9,7 @@ import "../App.css";
 
 export default function HomePage(props) {
     return (
-        <Container flex className="overflow">
+        <Container flex>
             <div className="banner">
                 <div
                     className="contect-box"
