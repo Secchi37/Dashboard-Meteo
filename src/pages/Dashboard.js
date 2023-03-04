@@ -6,7 +6,9 @@ export default function Dashboard(){
     return(
     <div>
     Dashboard page
-    <div className="qMaps"><Maps /></div>
+    <div className="qMaps">
+    <Maps />
+    </div>
     
     </div>
     )
