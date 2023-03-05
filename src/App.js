@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import BottonScroll from "./components/BottonScroll";
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <BottonScroll/>
       <Footer/>
     </div>
   );
