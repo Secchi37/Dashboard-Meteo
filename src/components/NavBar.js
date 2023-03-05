@@ -8,6 +8,7 @@ import '../components/styles.css'
 
 
 
+
 export default function NavBar() {
   const links = [
     {
@@ -19,7 +20,8 @@ export default function NavBar() {
       id: 2,
       path: "/dashboard",
       text: "Dashboard",
-    },
+    },  
+
   ];
   const [fix,setFix]=useState(false);
  
@@ -36,6 +38,16 @@ export default function NavBar() {
   window.addEventListener("scroll",activeScroll);
 //fix? {backgroundColor:'red'}:{backgroundColor:'green'}
 //style={fix? {position:"sticky", top:40}:{position:"top"}}
+const handleClickScroll = (param) => {
+  const element = document.getElementById(param);
+  if (element) {
+    console.log(param);
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth',block: "end", inline:"nearest" });
+  } 
+};
+
+
   return (
     <div style={fix? {position:"sticky", top:0,zIndex:1000}:{position:"top"}}>   
     <Navbar
@@ -77,6 +89,14 @@ export default function NavBar() {
                   <Nav.Link style={fix?{ fontWeight: 'bold',color:'black'}:{fontWeight: 'bold',color:'white'}} href={link.path}>{link.text}</Nav.Link>
                 );
               })}
+              <Nav.Link style={fix?{fontWeight: 'bold',color:'black'}:{ fontWeight: 'bold',color:'white'}} 
+              //href="#" 
+              onClick={()=>handleClickScroll('tecnologie')}
+              >About</Nav.Link>
+              <Nav.Link style={fix?{fontWeight: 'bold',color:'black'}:{ fontWeight: 'bold',color:'white'}} 
+             // href="#" 
+              onClick={()=>handleClickScroll('contatti')}
+              >Contatti</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Col>

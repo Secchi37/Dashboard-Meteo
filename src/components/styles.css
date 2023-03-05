@@ -26,9 +26,7 @@
   border-radius: 50%;
   box-shadow:  0px 5px 20px 10px #efefef;
   /* border-radius:50px;
-  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.10) */
-
- 
+  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.10) */ 
 }
 
 
@@ -58,6 +56,11 @@
   display: inline-block;
 }
 
+.footer{
+  background-image: url('../img/shape/shape-45.png');
+  left: 30;
+  right:30;
+}
 
 
 

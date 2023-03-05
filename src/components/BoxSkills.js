@@ -3,9 +3,9 @@ import { Card,Container, Row } from "react-bootstrap";
 import { dataS } from "../DATA/DataSkills";
 import '../components/styles.css'
 
-export  default function BoxSkills(){
-    
-    const[num,setNum]=useState(null); 
+export  default function BoxSkills(){    
+    const[num,setNum]=useState(null);
+
     return(
         <Container fluid style={{ 
             //background: 'traparent',
@@ -30,6 +30,7 @@ export  default function BoxSkills(){
                         <Card.Img src={require('../img/shape/shape-3.png')} key={index} 
                         style={num===index? { position: 'relative', zIndex: 1,marginLeft:'-5%'}:{ position: 'relative', zIndex: 1,marginLeft:'-5%',
                        filter:'invert(75%) sepia(43%) saturate(533%) hue-rotate(210deg) brightness(75%) contrast(125%)'}} />
+                        { /* eslint-disable-next-line no-useless-concat */}
                         <Card.Img src={require('../img/icons/' + `${dataS.img}` + '.png')} key={index} style={num===index? 
                             {                          
                                 marginTop: '25%',

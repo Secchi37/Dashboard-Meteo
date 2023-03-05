@@ -24,7 +24,7 @@ export default function HomePage(props) {
                         City.</p>
                 </div>
             </div>
-            <div className="tecnologie">
+            <div id="tecnologie" className="tecnologie">
                 <p style={{ textAlign: 'center' }}>TECNOLOGIE</p>
                 <h2>La nostra catena tecnologica per le Smart Cities</h2>
                 <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
@@ -33,7 +33,7 @@ export default function HomePage(props) {
             <div>
                 <BoxVocation />
             </div>
-            <div className="processo">
+            <div id="processo" className="processo">
                 <p style={{ textAlign: 'center' }}>IL NOSTRO PROCESSO</p>
                 <h2>Approccio data-driven</h2>
                 <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
@@ -53,7 +53,7 @@ export default function HomePage(props) {
                     <BoxSkills />
                 </div>
             </div>
-            <div className="box-contatti" style={{ position: 'relative', marginTop: '10%' }}>
+            <div id="contatti" className="box-contatti" style={{ position: 'relative', marginTop: '10%' }}>
                 <p style={{ textAlign: 'center' }}>CONTATTI</p>
                 <h2 style={{ textAlign: 'center' }}>Inviaci un Messaggio</h2>
                 <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
