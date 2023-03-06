@@ -7,8 +7,7 @@ export  default function BoxSkills(){
     const[num,setNum]=useState(null);
 
     return(
-        <Container fluid style={{ 
-            //background: 'traparent',
+        <Container fluid style={{            
         paddingBottom:'15%',marginTop:'2%',marginLeft:'15%' 
     }}>
             <Row xs={1} md={2} className="g-4" style={{ backgroundColor: 'rgba(255,255,255,0.01)' }}>
