@@ -11,8 +11,8 @@ export default function BoxProcess(){
 
   
     return(
-        <Container fluid style={{ marginTop: 15 }}>
-            <CardGroup style={{ margintTop: 50 }}>
+        <Container fluid style={{ marginTop: '3%' }}>
+            <CardGroup>            
                 {datiP.map((datiP, index) => (
                     <Card border="light" key={index} className="boxProcess" style={{
                         width: '18rem', top: 0,
@@ -23,8 +23,7 @@ export default function BoxProcess(){
                         
                         <Badge bg={num===index? view:'ligth'} text="dark" key={index} pill
                         style={{border:'1px solid rgba(0, 0, 0, 0.25)',borderWidth:'100%', width: 25, height: 25, borderRadius: '80%', marginRight: '35%',top:'80%'}}
-                        >{datiP.id}</Badge>
-                            
+                        >{datiP.id}</Badge>                            
                                 </Row>
                         <Container className="imgMovie" key={index}
                         onMouseEnter={() => {  

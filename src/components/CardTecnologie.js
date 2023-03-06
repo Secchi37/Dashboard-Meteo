@@ -8,7 +8,7 @@ import '../components/styles.css'
 export default function CardTecnologie(props){
    const dataCard=props.dataCard
     return(
-        <Container fluid style={{marginTop:10,marginLeft:25}}>
+        <Container fluid style={{marginTop:'2%',marginLeft:'5%'}}>
         <Row xs={1} md={2} className="g-4"
         //style={{textAlign:'center'}}
         >        

@@ -28,7 +28,7 @@ export default function Footer(){
 
     return(
         <div className='footer'>
-            <Container style={{paddingTop:'15%'}}>
+            <Container style={{paddingTop:'18%'}}>
                 <Row xs={1} md={2} lg={6}>
                     <Col sm style={{color:'white'}}>
                         <p><h4 >Info:</h4></p>
@@ -142,7 +142,7 @@ export default function Footer(){
                           </Col>
                           <Col sm style={{ color: 'white' }}>
                         <p><h4>Contatti</h4></p>
-                        <ul style={{ listStyleType:'none',margin: 0, padding: '5%'}}>
+                        <ul style={{ listStyleType:'none',margin: 0, padding: '0'}}>
                             <li
                             style={viewE?{color: 'white' }:{color:'grey'}}
                             onMouseEnter={() => {
@@ -153,7 +153,7 @@ export default function Footer(){
                              }}
                             ><h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                            </svg>  info@widata.cloud</h6></li>
+                            </svg>   info@widata.cloud</h6></li>
                           <li
                           style={{color:'grey'}}
                           ><h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">

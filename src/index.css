@@ -5,10 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* mobile */
+@media (min-width:480px) {
+  body {
+    /* background-image: url('../src/img/shape/shape-55b.png'), url('../src/img/shape/shape-56b.png');
+    background-repeat: no-repeat;
+    background-position: 210% top, 188% top;
+    margin-right: 100px;
+    background-attachment: scroll; */
+  }
+}
+
+/* tablet */
+@media (min-width:768px) {
+  body {
+    /* background-image: url('../src/img/shape/shape-55b.png'), url('../src/img/shape/shape-56b.png');
+    background-repeat: no-repeat;
+    background-position: 210% top, 188% top;
+    margin-right: 100px;
+    background-attachment: scroll; */
+  }
+}
+
+/* Laptop */
+@media (min-width:1024px) {
+  body {
+    background-image: url('../src/img/shape/shape-55b.png'), url('../src/img/shape/shape-56b.png');
+    background-repeat: no-repeat;
+    background-position: 210% top, 188% top;
+    margin-right: 100px;
+    background-attachment: scroll;
+  }
+}
+
+/* desktop */
+@media (min-width:1280px) {
+  body {
+    background-image: url('../src/img/shape/shape-55b.png'), url('../src/img/shape/shape-56b.png');
+    background-repeat: no-repeat;
+    background-position: 210% top, 188% top;
+    margin-right: 100px;
+    background-attachment: scroll;
+  }
 }

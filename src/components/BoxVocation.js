@@ -61,7 +61,7 @@ export default function BoxVocation() {
 
 
     return (
-        <Container fluid style={{ marginTop: 50, marginLeft: 25 }}>
+        <Container fluid style={{ marginTop: '10%', marginLeft: '5%' }}>
             <Row fluid>
                 <Col sm={4}>
                     <p>{title}</p>
