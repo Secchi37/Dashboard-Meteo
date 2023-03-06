@@ -24,11 +24,8 @@
   width: 200px;
   height:160px;
   border-radius: 50%;
-  box-shadow:  0px 5px 20px 10px #efefef;
-  /* border-radius:50px;
-  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.10) */ 
+  box-shadow:  0px 5px 20px 10px #efefef;  
 }
-
 
 .colorText{
   filter: invert(64%) sepia(72%) saturate(3753%) hue-rotate(347deg) brightness(100%) contrast(102%);
@@ -90,8 +87,7 @@
     .linkScroll{
       font-weight: bold !important;
       color:black !important;
-    }
-  
+    }  
   }
   /* Laptop */
   @media (min-width:1024px) {
@@ -119,8 +115,7 @@
     .linkScroll{
       font-weight: bold !important;
       color:black !important;
-    }
-  
+    }  
   }
 
 

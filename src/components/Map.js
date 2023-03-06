@@ -7,9 +7,10 @@ import "../App.css";
 
 
 export default function Maps(props) {
-    const position=props.position
-    const markers=props.markers;
-    
+    const position = props.position
+    const markers = props.markers;
+   
+
     useEffect(() => {
         callData();
         if (info === null) {
@@ -26,7 +27,7 @@ export default function Maps(props) {
             const dati = await Promise.all(
                 markers.map(async (item) => {
                     const response = await fetch("http://api.weatherapi.com/v1/current.json?key=31a8826667644854b57114207231602&q=" + item.coord + "&aqi=no&lang=it");
-                    const resp = await (await response.json());                    
+                    const resp = await (await response.json());
                     return resp;
                 })
             );
@@ -42,7 +43,7 @@ export default function Maps(props) {
             setIsLoading(true);
         } catch (error) {
             setIsLoading(false);
-            //console.log('mamcano dati');
+            console.log('mamcano dati');
         }
     };
 
@@ -56,15 +57,20 @@ export default function Maps(props) {
             icon: item.current.condition.icon,
         };
     }
+
     useEffect(() => {
         if (info === null && location !== null) {
             callData();
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [info, location]);
+  
 
     return (
-        <div className="leaflet-container">
+      
+        
+        <div className="leaflet-container">       
+          
             <MapContainer center={position} zoom={12} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -83,11 +89,10 @@ export default function Maps(props) {
                                     {info.value.title}<br />
                                     {info.meteo.stato}<br />
                                     <img alt="icona meteo" src={info.meteo.icon} /><br />
-                                    temperatura {info.meteo.temp}<br />
-                                    umidità {info.meteo.humidity}<br />
-                                    dir. vento {info.meteo.vento}<br />
-                                    pressione {info.meteo.pressione}<br />
-
+                                    Temperatura {info.meteo.temp} °<br />
+                                    Umidità {info.meteo.humidity} %<br />
+                                    Vento da {info.meteo.vento}<br />
+                                    Pressione {info.meteo.pressione} mb<br />
                                 </Popup>
                             </Marker>
                         ))}
@@ -95,5 +100,7 @@ export default function Maps(props) {
                     : null}
             </MapContainer>
         </div>
+    
+       
     );
 }

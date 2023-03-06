@@ -7,11 +7,9 @@ import "../App.css";
 
 export default function Dashboard(props){
 
-
     return (
-      <div>
-        Dashboard page        
-        <div className="mappa">
+      <div>               
+        <div style={{paddingBottom:'8%'}}>
           <div className="qMaps">
             <Maps markers={markers} position={position} />
           </div>          

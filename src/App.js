@@ -11,16 +11,16 @@ import BottonScroll from "./components/BottonScroll";
 
 
 function App() {
- 
+
   return (
-    <div fluid className="App">    
+    <div fluid className="App">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <BottonScroll/>
-      <Footer/>
+      <BottonScroll />
+      <Footer />
     </div>
   );
 }

@@ -41,9 +41,7 @@ export default function HomePage(props) {
             </div>
             <div className="box1-skills" style={{marginTop:'10%'}}>
                 <div className="box2-skills">
-                    <div
-                        style={{ position: 'relative',marginLeft: '15%' }}
-                    >
+                    <div style={{ position: 'relative',marginLeft: '15%' }}>
                         <p style={{ textAlign: 'left', color: 'white', paddingTop: '5%', zIndex: 3 }}>LE COMPETENZE DI DOMINIO ACQUISITE</p>
                         <Image            
                             alt='alt' src={require("../img/icons/decor-1.png")} style={{ zIndex: 3 }} />
@@ -94,9 +92,7 @@ export default function HomePage(props) {
                                      
                             </Toast.Body>
                         </Toast>
-
                     </ToastContainer>
-
 
                     <Row xs={1} md={2}>
                         <Col><Image className="d-block mx-auto img-fluid" alt='' src={require('../img/credit/widata-sito-loghi-istituzionali.png')} style={{ width: 250, height: 250 }} /></Col>
