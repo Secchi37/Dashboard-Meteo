@@ -1,13 +1,58 @@
 
-.card{
+.tec{
     background-color: white;
     text-align: center;
 }
-.card :hover{
+.tec :hover{
     background-color: orangered;
   /*  transform: translateY(-5px); */
     text-align: center;
     color:white;      
 }
+
+.boxProcess {
+  background-color: white;
+  text-align: center;
+}
+
+
+.boxProcess > .imgMovie{
+  background-color: #efefef;
+  background-image: url('../img/icons/icon-bg-1.png');
+  background-repeat: no-repeat;
+  background-position: center;  
+  width: 200px;
+  height:160px;
+  border-radius: 50%;
+  box-shadow:  0px 5px 20px 10px #efefef;
+  /* border-radius:50px;
+  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.10) */
+
+ 
+}
+
+
+.colorText{
+  filter: invert(64%) sepia(72%) saturate(3753%) hue-rotate(347deg) brightness(100%) contrast(102%);
+}
+
+.imgMovie:hover {
+  background-color: #edb7b7 ;
+  background-image: url('../img/icons/icon-bg-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 160px;
+  border-radius:50;
+  box-shadow: 0px 5px 20px 10px #edb7b7
+}
+
+.colorText1 {
+  filter: invert(100%);
+}
+
+
+
+
 
 

@@ -81,7 +81,7 @@ export default function BoxVocation() {
                             <il style={{ marginLeft: 10 }}>{punti}</il></ul>))}
                 </Col>
                 <Col sm={7} s>
-                    <Image alt="vocation" src={require("../img/background/video-1.jpg")} />
+                    <Image alt="vocation" src={require("../img/background/video-1.jpg")} style={{width:'100%',heigth:'100%'}} />
                     <ListGroup horizontal style={{ boxShadow: ' 0px 5px 20px 10px rgba(0, 0, 0, 0.10)' }}>
                         <ListGroup.Item action onClick={() => changeText('mission')} onMouseEnter={() => { setColorM(true) }} onMouseLeave={() => { title === mission[0].title ? setColorM(true) : setColorM(false) }}
                             style={!colorM ? { borderBottonColor: 'currentColor' } : { borderBottomColor: 'orangered', borderBottomWidth: 5 }}>
