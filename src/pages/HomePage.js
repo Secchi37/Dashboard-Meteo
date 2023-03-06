@@ -5,7 +5,9 @@ import BoxVocation from "../components/BoxVocation";
 import { dataCard } from "../DATA/DataCard";
 import BoxProcess from "../components/BoxProcess";
 import BoxSkills from "../components/BoxSkills";
+import FormContatti from "../components/FormContatti";
 import "../App.css";
+
 
 export default function HomePage(props) {
     return (
@@ -50,10 +52,11 @@ export default function HomePage(props) {
                     <BoxSkills />
                 </div>
             </div>
-            <div className="box-contatti" style={{position:'relative',margintTop:'50%'}}>
+            <div className="box-contatti" style={{position:'relative',marginTop:'10%'}}>
             <p style={{ textAlign: 'center' }}>CONTATTI</p>
-            <h2>Inviaci un Messaggio</h2>
+            <h2 style={{ textAlign: 'center' }}>Inviaci un Messaggio</h2>
             <Image className="d-block mx-auto img-fluid" alt='alt' src={require("../img/icons/decor-1.png")} />
+          <FormContatti/>
             </div>
 
 
